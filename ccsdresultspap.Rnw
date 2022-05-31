@@ -1,0 +1,1071 @@
+\documentclass[man,hidelinks]{apa7}
+%\documentclass[man,mask,noextraspace,hidelinks]{apa7}
+%\documentclass[doc,floatsintext,hidelinks]{apa7}
+%\documentclass{article}
+\usepackage{apacite}
+\usepackage{natbib}
+\usepackage{arydshln}
+\usepackage{rotating}
+\bibliographystyle{apacite}
+\usepackage{enumitem}
+\usepackage[normalem]{ulem} 
+\usepackage{colortbl}
+\usepackage{url}
+\usepackage{comment}
+\usepackage{afterpage}
+\usepackage{makecell}
+\usepackage{amsmath}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{tikz}
+\usepackage{tikzsymbols}
+\usetikzlibrary{shapes}
+\usetikzlibrary{decorations.pathreplacing}
+%\usepackage[hidelinks]{hyperref}
+%\usepackage{lipsum} #this creates a problem?!?!
+\usetikzlibrary{arrows,positioning,fit,arrows.meta}
+\usetikzlibrary{shapes}
+\usepackage{array}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\renewenvironment{knitrout}{\begin{singlespace}}{\end{singlespace}}
+\title{Exploring the Associations between MAP Growth and SBA by Demographics\vspace{.4cm}}
+\shorttitle{MAP Growth and SBA scores}
+\author{January Durant and Daniel B. Wright \vspace{.4cm}}
+\affiliation{Department of Educational Psychology\\ {University of Nevada, Las Vegas}}
+\authornote{Support for this project comes from the Dunn Family Foundation. Thanks to CCSD for providing the data. Correspondence should be addressed to Daniel Wright, daniel.wright@unlv.edu, or Department of Educational Psychology, UNLV, 4505 South Maryland Parkway, Las Vegas, NV, 89154.}
+\abstract{
+
+MAP Growth (MAP)and Smarter Balanced assessment (SBA) are two of the most common standardized assessments used in Pre-Kindergarten to Grade 12 education in the United States. We show how scores on MAP relate to scores on SBA for third grade students. Previous studies examining the relationship between MAP Growth and SBA have been conducted by the test publisher.  The current study expands on this and examines how scores on MAP Growth relate to scores on SBA and examine if these relationships vary by when the MAP Growth assessment is taken or by student demographics (by English language proficiency, gender, and ethnicity). Scores on these assessments are compared for 3rd grade students from Clark County, Nevada, which is the fifth largest school district in the United States. The scale scores were associated and, when using MAP to predict SBA scores, followed a quadratic pattern. While students' scores on the assessments varied by English language proficiency, gender, and ethnicity (i.e., discrepancies that are often referred to as achievement gaps), the relationships between these assessments showed a similar pattern across these demographics. Growth scores were calculated for three MAP administration time points. As well as showing a slight``rich get richer'' effect (i.e., slightly more growth for those scoring high), there were regression towards the mean effects. The MAP growth curves were similar by English language proficiency, gender, and ethnicity.
+ }
+\begin{document}
+\maketitle
+
+The primary goal of this paper is to show how the scores on MAP Growth (MAP, by NWEA) relate to scores on the Smarter Balanced Assessment (SBA), and to examine if these relationships vary by when the MAP is taken and by student demographics (by English language proficiency, gender, and ethnicity). MAP Growth is a set of assessments designed to give formative feedback throughout the year for pre-kindergarten to Grade 12 (PK--12) students. NWEA state their assessments are used in 9,500 school districts in 145 countries (\url{www.nwea.org}). The MAP Growth assessment is the most used of their assessments within PK-12 and here will be referred to as MAP. SBA (\url{smarterbalanced.org}) has been developed by several US states (the consortium has had up to 30 member states) and its assessments are used, among other things, in grades 3--8 and 11 as summative end of year assessments to measure academic ``proficiency'' of students. In the US, state and federal law currently requires schools to report academic proficiency data and SBA is commonly used for this purpose. Alignment studies conducted by NWEA, indicate MAP Growth scores align with SBA scores;  thus, MAP growth scores may be used to identify students who may not be on track to meet end of year academic proficiency standards.  Given that MAP and SBA are two of the most commonly used assessments in the US and there is a paucity of peer reviewed research examining their relationship,  further investigating the relationship between these tests and whether the relationship varies by characteristics of the students is important. The data examined here come from Clark County, Nevada, which is a large ethically diverse school district where students take both MAP and SBA. 
+
+
+SBA converts the scale scores, which range from approximately 2,000 to 3,000, into four levels (Smarter Balanced, 2021). States can use different verbal labels to describe these and in Nevada the labels used are: minimal understanding, partial understanding, proficient, and advanced. For Federal reporting purposes, states often just report the proportion at levels 3 or 4 (i.e., at least proficient). Because of this NWEA have produced reports for how MAP scores relate to either just this threshold or the three thresholds differentiating the four levels on SBA. Their most recent (at the time of writing) report comparing MAP and SBA is at \url{www.nwea.org/resources/sbac-linking-study/} \citep{MAPSBAC2021}.
+
+It is important to stress that transforming the scale scores into categories causes information to be lost \citep{AltmanRoyston2006,MacCallumEA2002} and this is recognized by SBAC.
+\begin{quote}
+Although Achievement Level Descriptors are intended to aid interpretation of the four categories, they are less precise than scaled scores for describing student growth or changes in achievement gaps among groups of students since they do not reveal changes of student scores within the four levels. Thus, achievement levels should be understood as representing approximations of levels at which students demonstrate mastery of a set of concepts and skills.
+\\ \phantom{dwww} \hfill \url{https://validity.smarterbalanced.org/scoring/} (Oct.~24, 2021)
+\end{quote}
+\noindent As such, here the MAP scale scores are compared with the SBA scale scores. This allows more information to be used in comparing these measures. 
+
+Psychometricians talk of three ways to compare scores from two tests: equating, aligning, and predicting \citep[e.g.,][]{DorensEA2011,HollandDorans2006}. Equating requires that the tests measure the same construct (and no constructs that the other does not) and that they are equally difficult and equally reliable. Students taking high stakes standardized tests will often receive different forms of the test. They are equitable if no student should have a preference about which form they take. These conditions are usually only applicable with parallel forms of the same test. Scale aligning requires matching points from the scales onto a common metric \citep{DorensEA2011}. How this common scale score is used depends on further assumptions. Sometimes this is called the concordance of the two tests. For example, the following report shows the concordance of two tests often used for undergraduate admissions in the US: the ACT and SAT scores: \url{www.act.org/content/act/en/products-and-services/the-act/scores/act-sat-concordance.html}. Each test is treated the same by the statistical procedure. Prediction requires the fewest assumptions and the two assessments are treated differently. One assessment is used to predict scores on the other assessment. This is the approach taken here. %, though there will be some discussion of aligning the two scales. This removed since this part removed from paper.
+As these assessments are not designed to measure the same construct, here the appropriate approach is prediction. Because the SBA scores are used for federal reporting, the MAP scores will be used to predict the SBA scores using regression. 
+
+The three MAP administrations can be used to measure academic growth throughout the year. These growth estimates can be compared by demographics. We can also examine whether students who begin the year with high scores tend to have lower growth than students who begin with low scores. This often occurs when the initial scores are not perfectly reliable, so include part true score and part what is assumed random error. This is true for all educational assessments \citep{Standards}. It is assumed that while the true score remains relatively stable, those with very high random errors will have less positive error terms on subsequent assessments, and vice versa for those with initially very low error scores. This will lead to the tendency for scores to regress to the mean \citep{Galton1886}. The opposite finding, that high scoring students increase or the ``rich get richer'' effect--also referred to as the \emph{Matthew Effect}, \citep[e.g.,][]{Stanovich1986} based on a story in the \emph{Gospel of Matthew}--predicts those with initially high scores grow more. As the regression to mean occurs simply because of the way in which test scores are estimated, we predict regression to the mean to occur.
+
+
+\section{Analysis Plan}
+The main descriptive procedures are scatter plots with the SBA scores on the vertical axis and MAP scores on the horizontal axis. Because the scores on the SBA have a ceiling, about one percent in the sample scored at the maximum (and a smaller amount at the minimum), a Tobit regression is used \citep{Tobin1958}. While this is a small percentage, if an unbounded regression is used this produces large over-predictions for high MAP scores. Because Tobit regressions are more common in economics than education research, a brief review of this approach is warranted. \citet{Tobin1958} created a model where it is assumed that there is some normally distributed variable but that the values beyond some threshold have all been given that threshold as a value. This is described as censored data. The SBA data have many values (about $1\%$)  at the maximum and a smaller number at the minimum. This ceiling effect is intended because the test is not designed to measure precisely at these extremes because the federal government simply asks for the proportion of students above different thresholds. In order to reliably produce estimates at high values would require lengthening the assessment by including a greater number of difficult questions. The statistical approach often used when there is a cut-off where scores above this value are just given the cut-off value is Tobit regression. The Tobit approach is popular in econometrics and biostatistics, and has been discussed for other areas \citep[e.g.,][]{WrightEA2011}. Tobit regression can be run in \textsf{R} \citep{R} using the \texttt{survreg} function \citep{survival} or more conveniently using a wrapper function for this, called \texttt{tobit}, that is in the \textbf{AER} package \citep{AER}. 
+
+
+The regression modeling begins with a linear model, without demographic variables. A quadratic model and a model with two lines connected at the median (so both one additional degree of freedom) are then tested. The model with two lines connected at the median is sometimes called the \emph{broken-stick} model. This is a type of B-spline, more details are discussed in \citet[pp.~271--276]{JamesEA2013}. The quadratic and the broken stick model were chosen because they are equally complex, each estimating two parameters (the linear slope and quadratic terms for the quadratic models, and the slopes for the line each side of the median for the broken stick model). Models with more degrees of freedom were also examined but these did not improve the fit substantively. $R^2$ is used to compare models as it is a well-known measure. $p$-values are not used in this paper for several reasons, including:  many readers misunderstand them \citep[e.g.,][and many others]{Oakes1986}; the sample size is large enough so that even minute effects will be ``significant'' \citep[e.g.,][]{Cohen1994}; and for data security reasons we do not have school identifiers which means that the data are not independent, an assumption for the $p$-values' accuracy \citep[e.g.,][]{Goldstein2011}. Once a model has been chosen, the demographic variables are included to explore if the associations between SBA and MAP are similar for these groups.
+
+Many of the technical reports by NWEA match the scores for the two assessments for the proportion of the sample with scores less than or equal to this score, called equi-percentile linking, and show the concordance of the two measures (i.e., scale aligning). This approach matches, for example, the scores associated with the 42\emph{nd} percentile of each assessment. Depending on the granularity of the assessment scores this creates a monotonically increasing step-function between the two measures. These analyses are available from the authors, but not included in this report. 
+
+We also examine growth throughout the year on the three MAP administrations (i.e., fall, winter, spring) and explore whether the growth estimates are associated with the demographics. There are many approaches to growth modeling \citep[e.g.,][]{GrimmEA2017}. The approaches that we use are:
+\begin{enumerate}[noitemsep]
+\item \underline{Multilevel models}. Whether the assessment was given in fall, winter, or spring is coded as a variable used to predict the MAP scores. The intercept and the slope are allowed to vary by person ($\mathit{score}_{ij} = (\beta_0 + u_{0j}) + (\beta_1 + u_{1j}) \; \mathit{administration}_{ij} + e_{ij}$), and the conditional modes for each $u_{1j}$ are calculated. $\beta_1$ is added to these to create slope estimates.
+
+<<formulti,eval=FALSE,echo=FALSE>>=
+model <- lmer(MapScore ~ time + (time|studentID))
+@
+\item \underline{Structural equation models}. A growth model is defined such that there is a latent variable for the intercept and a latent variable for the slope \citep{Bauer2003,Curran2003}. The estimated slopes from this procedure should be similar to the estimate from the multilevel/conditional modes procedure. In many cases, depending on coding and some aspects of the data, they can be identical \citep{McNeishMatta2018}. 
+<<forSEM,eval=FALSE,echo=FALSE>>=
+model <- 'i =~ 1*Math.Fall + 1*Math.Winter + 1*Math.Spring
+          s =~ -2*Math.Fall + -1*Math.Winter'
+@
+\item \underline{The observed slope for each student}. The third approach is less complex. This can have advantages because with only three time points and some missing values, the complex approaches can have computational problems \citep{Wright2017growth}. Let the estimate for the slope be the observed slope of each person who has two or three points. If they only have one or zero MAP assessments, they do not get a slope for this or any of the slope estimation procedures. If these estimates are very different from those found with either of the first two procedures it suggests that those more complex procedures may be unreliable because of having so few values per person and therefore this simpler approach would be preferred. Otherwise the more complex approaches will likely be more accurate.
+\end{enumerate}
+
+Three approaches are used because with a small number of time points (a maximum of three per person) care must be taken when calculating a growth score. The first two approaches can produce conditional modes and latent variables that either have the slope and intercept values highly correlated ($r > .99$) or near zero variance terms for one of them near zero. If the different approaches give different estimates the third approach, the observed slopes, will be used as recommended in \citet{Wright2017growth}. If the estimates from the different procedures are similar ($r > .9$) the estimates from the first two approaches are preferred as they use information from other students to produce better estimates for the individual students. \citet{EfronMorris1977} provide a clear description of how using information from others, in effect shrinking the estimates towards the sample mean, improves accuracy of the individual estimates. If the estimates are all similar for the three procedures the conditional modes approach will be used. 
+
+The analysis was done using \textsf{R} \citep{R}. The code for our analysis, as part of the final submitted version of this paper in a \textbf{knitr} file \citep{knitr}, will be placed on github. Accessing the data requires permission from the Clark Country School District (CCSD)  so the data are not placed there. The following \textsf{R} packages were used for analyses: \textbf{AER} \citep{AER}, \textbf{lavaan} \citep{lavaan}, and \textbf{lme4} \citep{lme4}. 
+  
+
+\section{The Data}
+Data were drawn from existing electronic educational records of students who attended school within CCSD during the 2018-2019 school year (pre-COVID 19). CCSD is located in southern Nevada and is the fifth largest school district in the United States. Clark County, Nevada, includes a large urban area (e.g., Las Vegas, Henderson, North Las Vegas, Paradise), suburbs, and some rural areas. According to the 2010 census, there are about two million people living there, with 61\% White, 11\% African American, 9\% Asian, less than 1\% of Pacific Islander, less than 1\% American Indian, 14\% from other races, and 5\% from two or more races. Twenty-nine percent of residents identified as of Hispanic origin. The current demographics of the Las Vegas area are likely to be similar to the US as a whole within a few decades \citep[e.g.,][]{Frey2015,Kolko2017}.
+
+
+<<loadpacks,echo=FALSE,warning=FALSE,message=FALSE>>=
+#install.packages("AER") #and other packages as necessary
+library(AER) #for tobit
+#library(VGAM) #for vglm seems similar results to tobit
+#not going to load this since there is a tobit function for
+#defining a model with vglm, so in case I forget AER::
+library(xtable) #for xtable
+#library(ciTools) #for add_ci, not used in final
+library(splines) #for bs
+library(lavaan) #for growth
+library(semPlot) # for semPaths
+library(lme4) #for lmer
+#library(reshape2) #for merge to make long data #not used
+opts_chunk$set(cache.path =  "C:/Users/dbroo/OneDrive/Documents/JDurant/cache/")
+opts_chunk$set(fig.path =  "C:/Users/dbroo/OneDrive/Documents/JDurant/figure/")
+@
+
+<<readata,echo=FALSE>>=
+#The initial data set did not include gender, hence the title here
+#To access the data you need permission from CCSD.
+ccsd <- 
+  read.csv("C:\\Users\\dbroo\\OneDrive\\Documents\\JDurant\\datawithgender.csv")
+@
+
+
+During the 2018-2019 school year there were 384 schools and 325,081 students enrolled within CCSD. Data were requested from the Assessment, Accountability, Research, and School Improvement Division at CCSD. We received data on \Sexpr{prettyNum(nrow(ccsd),big.mark=",")} third grade students. The following variables were included in the data set: student age, gender, ethnicity, English proficiency, six MAP scores on the 2018--2019 fall, winter, and spring administrations for reading and math, and two SBA scores for English, language, arts (ELA) and math. The SBA is given is given in the spring, so is closest in time to the spring MAP administration. All students enrolled in third grade with test data were included in the sample. Data for all grades where SBA is administered were requested, but only grade three data were made available.
+
+
+<<combineeth,echo=FALSE>>=
+ccsd$Eth2 <- ccsd$Ethnicity
+ccsd$Eth2[ccsd$Eth2 == "Pacific Islander" |
+                  ccsd$Eth2 == "Native American"] <- "NatAorPacI"
+@
+
+<<tablep,echo=FALSE>>=
+#table(ccsd$LEP,useNA="always")
+ccsd$LEP <- ccsd$LEP == "Yes"
+ccsd$female <- ccsd$Gender == "Female"
+attach(ccsd)
+@
+
+<<echo=FALSE>>=
+lep1 <- table(LEP,useNA="always")
+lep2 <- round(100*table(LEP,useNA="always")/length(LEP))
+gen1 <- table(female,useNA="always")
+gen2 <- round(100*table(female,useNA="always")/length(female))
+eth1 <- table(Ethnicity,useNA="always")
+eth2 <- round(100*table(Ethnicity,useNA="always")/length(Ethnicity))
+#table(Eth2,useNA="always")
+#round(100*table(Eth2,useNA="always")/length(Eth2))
+@
+
+\subsection{Ethics Statement}
+This study received ethics approval from UNLV IRB and received approval from the CCSD Research Review Committee. 
+
+<<echo=FALSE>>=
+library(english)
+@
+
+\section{Results}
+\subsection{Descriptive Statistics}
+Descriptive statistics for demographic variables are listed in Table~\ref{tab:demogdesc}. Ethnicity is divided into seven %\Sexpr{as.english(length(unique(ccsd$Ethnicity)))} 
+categories. The Pacific Islander and Native American categories have fewer people than the others. These will be combined for modeling purposes. Table~\ref{tab:scoresdesc} shows descriptive statistics for the four assessments. The MAP scores increase throughout the year.  The means for these tables are shown broken down by the demographic variables in the Appendix. 
+
+
+\begin{table}
+\begin{center}
+\caption{Percentages in the sample for Limited English Proficiency (LEP), by gender, and by ethnicity. The gender variable is binary.} \label{tab:demogdesc}
+\begin{tabular}{cccc}
+\multicolumn{2}{c}{LEP} & \multicolumn{2}{c}{Gender}\\ \hline
+\noalign{\vskip .1cm} 
+No & Yes & Male & Female\\ \hline
+\Sexpr{lep2[1]}\% (\Sexpr{lep1[1]}) &
+\Sexpr{lep2[2]}\% (\Sexpr{lep1[2]}) & 
+\Sexpr{gen2[1]}\% (\Sexpr{gen1[1]}) &
+\Sexpr{gen2[2]}\% (\Sexpr{gen1[2]}) \\ \hline \noalign{\vskip .2cm}  
+\multicolumn{4}{c}{Ethnicity} \\ \hline \noalign{\vskip .1cm}
+\Sexpr{names(eth1[1])} & \Sexpr{names(eth1[2])} & 
+\Sexpr{names(eth1[3])} & \Sexpr{names(eth1[4])} \\ \noalign{\vskip .1cm}
+\Sexpr{eth2[1]}\% (\Sexpr{eth1[1]}) &
+\Sexpr{eth2[2]}\% (\Sexpr{eth1[2]}) &
+\Sexpr{eth2[3]}\% (\Sexpr{eth1[3]}) &
+\Sexpr{eth2[4]}\% (\Sexpr{eth1[4]}) \\
+
+\Sexpr{names(eth1[5])} & \Sexpr{names(eth1[6])} &
+\Sexpr{names(eth1[7])} & \\
+\Sexpr{eth2[5]}\% (\Sexpr{eth1[5]}) &
+\Sexpr{sprintf("%0.2f",(100*table(Ethnicity,useNA="always")/length(Ethnicity))[6])}\% &
+\Sexpr{eth2[7]}\% (\Sexpr{eth1[7]}) \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+<<echo=FALSE>>=
+xtab <- matrix(nrow=8,ncol=9)
+xtab[1,] <- c(mean(MAP.Fall.Reading,na.rm=TRUE),
+              sd(MAP.Fall.Reading,na.rm=TRUE),
+              quantile(MAP.Fall.Reading,na.rm=TRUE),
+              sum(is.na(MAP.Fall.Reading)),100*mean(is.na(MAP.Fall.Reading)))
+xtab[2,] <- c(mean(MAP.Winter.Reading,na.rm=TRUE),
+              sd(MAP.Winter.Reading,na.rm=TRUE),
+              quantile(MAP.Winter.Reading,na.rm=TRUE),
+              sum(is.na(MAP.Winter.Reading)),100*mean(is.na(MAP.Winter.Reading)))
+xtab[3,] <- c(mean(MAP.Spring.Reading,na.rm=TRUE),
+              sd(MAP.Spring.Reading,na.rm=TRUE),
+              quantile(MAP.Spring.Reading,na.rm=TRUE),
+              sum(is.na(MAP.Spring.Reading)),100*mean(is.na(MAP.Spring.Reading)))
+xtab[4,] <- c(mean(SBAC.ELA.Score,na.rm=TRUE),
+              sd(SBAC.ELA.Score,na.rm=TRUE),
+              quantile(SBAC.ELA.Score,na.rm=TRUE),
+              sum(is.na(SBAC.ELA.Score)),100*mean(is.na(SBAC.ELA.Score)))
+xtab[5,] <- c(mean(MAP.Fall.Mathematics,na.rm=TRUE),
+              sd(MAP.Fall.Mathematics,na.rm=TRUE),
+              quantile(MAP.Fall.Mathematics,na.rm=TRUE),
+              sum(is.na(MAP.Fall.Mathematics)),100*mean(is.na(MAP.Fall.Mathematics)))
+xtab[6,] <- c(mean(MAP.Winter.Mathematics,na.rm=TRUE),
+              sd(MAP.Winter.Mathematics,na.rm=TRUE),
+              quantile(MAP.Winter.Mathematics,na.rm=TRUE),
+              sum(is.na(MAP.Winter.Mathematics)),100*mean(is.na(MAP.Winter.Mathematics)))
+xtab[7,] <- c(mean(MAP.Spring.Mathematics,na.rm=TRUE),
+              sd(MAP.Spring.Mathematics,na.rm=TRUE),
+              quantile(MAP.Spring.Mathematics,na.rm=TRUE),
+              sum(is.na(MAP.Spring.Mathematics)),100*mean(is.na(MAP.Spring.Mathematics)))
+xtab[8,] <- c(mean(SBAC.Math.Score,na.rm=TRUE),
+              sd(SBAC.Math.Score,na.rm=TRUE),
+              quantile(SBAC.Math.Score,na.rm=TRUE),
+              sum(is.na(SBAC.Math.Score)),100*mean(is.na(SBAC.Math.Score)))
+xtab2 <- xtab 
+#rownames(xtab) <- c("English",
+#  "..MAP-Fall",  "..MAP-Winter", "..MAP-Spring", "..SBAC",
+#  "Math",
+ #   "..MAP-Fall",  "..MAP-Winter", "..MAP-Spring", "..SBAC")
+  
+#colnames(xtab) <- c("mean","sd","min","1st Q", "Median",
+#              "3rd Q", "max", "missing")
+@
+
+
+<<echo=FALSE,eval=FALSE>>=
+100*mean(SBAC.Math.Score == max(SBAC.Math.Score,na.rm=TRUE) | 
+     SBAC.Math.Score == min(SBAC.Math.Score,na.rm=TRUE), na.rm=TRUE)
+100*mean(SBAC.ELA.Score == max(SBAC.ELA.Score,na.rm=TRUE) |
+     SBAC.ELA.Score == min(SBAC.ELA.Score,na.rm=TRUE),na.rm=TRUE)
+@
+
+
+<<tabd:scoredesc,results='asis',eval=FALSE,echo=FALSE>>=
+print(xtable(xtab,caption="LKJL",
+    label="tab:scoredesc",digits=c(0,2,2,0,0,0,0,0,0)),
+    hline.after=c(-1,0,5,10), size="small",
+#    add.to.row = list(pos=list(4),command="\\hdashline \n"),
+    caption.placement="top",
+       sanitize.rownames.function=function(x)gsub("\\."," ",x))
+@
+
+\begin{table}
+\begin{center}
+\caption{Descriptive statistics for the assessments.} \label{tab:scoresdesc}
+\begin{tabular}{l ccccccccc}
+& mean & sd & min & 1st Q & median & 3rd Q & max & missing & miss \% \\ \cline{2-10}
+Reading &&&&&&&& \\
+\phantom{w} MAP Fall & 
+\Sexpr{round(xtab2[1,1])} & \Sexpr{round(xtab2[1,2])} &\Sexpr{round(xtab2[1,3])} &\Sexpr{round(xtab2[1,4])} &\Sexpr{round(xtab2[1,5])} &\Sexpr{round(xtab2[1,6])} &\Sexpr{round(xtab2[1,7])} &\Sexpr{round(xtab2[1,8])} &\Sexpr{round(xtab2[1,9],2)}\% \\
+\phantom{w} MAP Winter &
+\Sexpr{round(xtab2[2,1])} & \Sexpr{round(xtab2[2,2])} &\Sexpr{round(xtab2[2,3])} &\Sexpr{round(xtab2[2,4])} &\Sexpr{round(xtab2[2,5])} &\Sexpr{round(xtab2[2,6])} &\Sexpr{round(xtab2[2,7])} &\Sexpr{round(xtab2[2,8])} &\Sexpr{round(xtab2[2,9],2)}\% \\
+\phantom{w} MAP Spring &
+\Sexpr{round(xtab2[3,1])} & \Sexpr{round(xtab2[3,2])} &\Sexpr{round(xtab2[3,3])} &\Sexpr{round(xtab2[3,4])} &\Sexpr{round(xtab2[3,5])} &\Sexpr{round(xtab2[3,6])} &\Sexpr{round(xtab2[3,7])} &\Sexpr{round(xtab2[3,8])} &\Sexpr{round(xtab2[3,9],2)}\% \\ \arrayrulecolor{gray} \hline
+\phantom{w} SBA &
+\Sexpr{round(xtab2[4,1])} & \Sexpr{round(xtab2[4,2])} &\Sexpr{round(xtab2[4,3])} &\Sexpr{round(xtab2[4,4])} &\Sexpr{round(xtab2[4,5])} &\Sexpr{round(xtab2[4,6])} &\Sexpr{round(xtab2[4,7])} &\Sexpr{round(xtab2[4,8])} &\Sexpr{round(xtab2[4,9],2)}\% \\ \hline
+Mathematics &&&&&&&& \\
+\phantom{w} MAP Fall &
+\Sexpr{round(xtab2[5,1])} & \Sexpr{round(xtab2[5,2])} &\Sexpr{round(xtab2[5,3])} &\Sexpr{round(xtab2[5,4])} &\Sexpr{round(xtab2[5,5])} &\Sexpr{round(xtab2[5,6])} &\Sexpr{round(xtab2[5,7])} &\Sexpr{round(xtab2[5,8])} &\Sexpr{round(xtab2[5,9],2)}\% \\
+\phantom{w} MAP Winter &
+\Sexpr{round(xtab2[6,1])} & \Sexpr{round(xtab2[6,2])} &\Sexpr{round(xtab2[6,3])} &\Sexpr{round(xtab2[6,4])} &\Sexpr{round(xtab2[6,5])} &\Sexpr{round(xtab2[6,6])} &\Sexpr{round(xtab2[6,7])} &\Sexpr{round(xtab2[6,8])} &\Sexpr{round(xtab2[6,9],2)}\% \\
+\phantom{w} MAP Spring &
+\Sexpr{round(xtab2[7,1])} & \Sexpr{round(xtab2[7,2])} &\Sexpr{round(xtab2[7,3])} &\Sexpr{round(xtab2[7,4])} &\Sexpr{round(xtab2[7,5])} &\Sexpr{round(xtab2[7,6])} &\Sexpr{round(xtab2[7,7])} &\Sexpr{round(xtab2[7,8])} &\Sexpr{round(xtab2[7,9],2)}\% \\  \arrayrulecolor{gray} \hline %\hdashline
+\phantom{w} SBA &
+\Sexpr{round(xtab2[8,1])} & \Sexpr{round(xtab2[8,2])} &\Sexpr{round(xtab2[8,3])} &\Sexpr{round(xtab2[8,4])} &\Sexpr{round(xtab2[8,5])} &\Sexpr{round(xtab2[8,6])} &\Sexpr{round(xtab2[8,7])} &\Sexpr{round(xtab2[8,8])}
+&\Sexpr{round(xtab2[8,9],2)}\%\\ \arrayrulecolor{black} \hline
+\multicolumn{9}{l}{Total sample size = \Sexpr{prettyNum(nrow(ccsd),big.mark=",")}} \\ 
+\multicolumn{9}{l}{(sd = standard deviation, min = minimum,} \\ 
+\multicolumn{9}{l}{\phantom{(}1st Q = first quartile, 3rd Q = third quartile, max = maximum)} \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+<<scalingSBAC,echo=FALSE>>=
+sSBAC.ELA <- scale(SBAC.ELA.Score) 
+sMAP.Fall.Read <- scale(MAP.Fall.Reading) 
+sMAP.Winter.Read <- scale(MAP.Winter.Reading) 
+sMAP.Spring.Read <- scale(MAP.Spring.Reading) 
+sSBAC.Math <- scale(SBAC.Math.Score) 
+sMAP.Fall.Math <- scale(MAP.Fall.Mathematics) 
+sMAP.Winter.Math <- scale(MAP.Winter.Mathematics)
+sMAP.Spring.Math <- scale(MAP.Spring.Mathematics)
+@
+
+
+The assessments use different scales. To allow comparisons across assessments to be more apparent, in subsequent analyses these assessment scores are scaled such that their means are 0 and their standard deviations are 1. Figure~\ref{fig:tobits6} shows 5,000 randomly chosen data points for the two SBAs with each of the MAPs for the corresponding content area. Only 5,000 are used so that the density of points in different regions of these plots can be seen. Besides the SBAs being censored (seen most clearly at the maximum), there is a non-linear pattern for each of these. A quadratic relationship between MAP and SBA improves the fit for each MAP administration. The curves are drawn based on the entire sample for the Tobit regressions using both linear and quadratic terms for the MAPs variables to predict SBA (i.e., $\beta_0 + \beta_1 \mathit(MAP)_i + \beta_2 \mathit(MAP)_i^2$). Three observations can be drawn from these. First, all the MAP administrations are positively associated with SBA scores. Second, the quadratic curves seem to summarize these associations fairly well. Third, the spread of the data around these curves appears to be getting less from fall, to winter, to spring MAP administrations, or in other words the association with SBA is stronger the closer the administration dates are too each other. 
+
+
+<<tobits6,cache=FALSE,fig.cap="Six scatter plots for 5,000 SBA and MAPs values (jittered).",fig.width=6.9*.9,fig.height=4.8*.9,out.height="4.8in",out.width="6.9in",fig.align="center",fig.lab="fig:tobits6",echo=FALSE>>=
+k <- 5000  # 
+par(mar=c(4,4,1,0))
+par(mfrow=c(2,3))
+#Reading Fall
+RFccases <- complete.cases(cbind(sMAP.Fall.Read,sSBAC.ELA))
+k <- sum(RFccases)
+RFx <- sMAP.Fall.Read[RFccases]
+RFx2 <- sMAP.Fall.Read[RFccases]^2
+RFy <- sSBAC.ELA[RFccases]
+RF1 <- AER::tobit(RFy ~ RFx + RFx2,left=min(RFy),right=max(RFy))
+smap1 <- seq(min(RFx),max(RFx),length.out=200)
+smap2 <- smap1^2
+newd0 <- data.frame(RFx = smap1, RFx2 = smap2)
+RFpred <- predict(RF1,newdata=newd0)
+samp <- sample(1:length(RFx),k)
+x <- RFx[samp]
+y <- RFy[samp]
+plot(x,y,xlab="MAP (Fall, Reading)",ylab="SBA ELA",las=1,cex=.01)
+lines(smap1,RFpred,col="black",lwd=2)
+lines(smap1,RFpred,col="white",lwd=1)
+box()
+
+#Reading Winter
+RWccases <- complete.cases(cbind(sMAP.Winter.Read,sSBAC.ELA))
+RWx <- sMAP.Winter.Read[RWccases]
+RWx2 <- sMAP.Winter.Read[RWccases]^2
+RWy <- sSBAC.ELA[RWccases]
+RW1 <- AER::tobit(RWy ~ RWx + RWx2,left=min(RWy),right=max(RWy))
+smap1 <- seq(min(RWx),max(RWx),length.out=200)
+smap2 <- smap1^2
+newd0 <- data.frame(RWx = smap1, RWx2 = smap2)
+RWpred <- predict(RW1,newdata=newd0)
+samp <- sample(1:length(RWx),k)
+x <- RWx[samp]
+y <- RWy[samp]
+plot(jitter(x),jitter(y),xlab="MAP (Winter, Reading)",ylab="",las=1,cex=.01)
+lines(smap1,RWpred,col="black",lwd=2)
+lines(smap1,RWpred,col="white",lwd=1)
+box()
+
+
+#Reading Spring
+RSccases <- complete.cases(cbind(sMAP.Spring.Read,sSBAC.ELA))
+RSx <- sMAP.Spring.Read[RSccases]
+RSx2 <- sMAP.Spring.Read[RSccases]^2
+RSy <- sSBAC.ELA[RSccases]
+RS1 <- AER::tobit(RSy ~ RSx + RSx2,left=min(RSy),right=max(RSy))
+smap1 <- seq(min(RSx),max(RSx),length.out=200)
+smap2 <- smap1^2
+newd0 <- data.frame(RSx = smap1, RSx2 = smap2)
+RSpred <- predict(RS1,newdata=newd0)
+samp <- sample(1:length(RSx),k)
+x <- RSx[samp]
+y <- RSy[samp]
+plot(jitter(x),jitter(y),xlab="MAP (Spring, Reading)",ylab="",las=1,cex=.01)
+lines(smap1,RSpred,col="black",lwd=2)
+lines(smap1,RSpred,col="white",lwd=1)
+box()
+
+
+#Math Fall
+MFccases <- complete.cases(cbind(sMAP.Fall.Math,sSBAC.Math))
+MFx <- sMAP.Fall.Math[MFccases]
+MFx2 <- sMAP.Fall.Math[MFccases]^2
+MFy <- sSBAC.Math[MFccases]
+MF1 <- AER::tobit(MFy ~ MFx + MFx2,left=min(MFy),right=max(MFy))
+smap1 <- seq(min(MFx),max(MFx),length.out=200)
+smap2 <- smap1^2
+newd0 <- data.frame(MFx = smap1, MFx2 = smap2)
+MFpred <- predict(MF1,newdata=newd0)
+samp <- sample(1:length(MFx),k)
+x <- MFx[samp]
+y <- MFy[samp]
+plot(jitter(x),jitter(y),xlab="MAP (Fall, Math)",ylab="SBA Math",las=1,cex=.01)
+lines(smap1,MFpred,col="black",lwd=2)
+lines(smap1,MFpred,col="white",lwd=1)
+box()
+
+#Math Winter
+MWccases <- complete.cases(cbind(sMAP.Winter.Math,sSBAC.Math))
+MWx <- sMAP.Winter.Math[MWccases]
+MWx2 <- sMAP.Winter.Math[MWccases]^2
+MWy <- sSBAC.Math[MWccases]
+MW1 <- AER::tobit(MWy ~ MWx + MWx2,left=min(MWy),right=max(MWy))
+smap1 <- seq(min(MWx),max(MWx),length.out=200)
+smap2 <- smap1^2
+newd0 <- data.frame(MWx = smap1, MWx2 = smap2)
+MWpred <- predict(MW1,newdata=newd0)
+samp <- sample(1:length(MWx),k)
+x <- MWx[samp]
+y <- MWy[samp]
+plot(jitter(x),jitter(y),xlab="MAP (Winter, Math)",ylab="",las=1,cex=.01)
+lines(smap1,MWpred,col="black",lwd=2)
+lines(smap1,MWpred,col="white",lwd=1)
+box()
+
+
+#Math Spring
+MSccases <- complete.cases(cbind(sMAP.Spring.Math,sSBAC.Math))
+MSx <- sMAP.Spring.Math[MSccases]
+MSx2 <- sMAP.Spring.Math[MSccases]^2
+MSy <- sSBAC.Math[MSccases]
+MS1 <- AER::tobit(MSy ~ MSx + MSx2,left=min(MSy),right=max(MSy))
+smap1 <- seq(min(MSx),max(MSx),length.out=200)
+smap2 <- smap1^2
+newd0 <- data.frame(MSx = smap1, MSx2 = smap2)
+MSpred <- predict(MS1,newdata=newd0)
+samp <- sample(1:length(MSx),k)
+x <- MSx[samp]
+y <- MSy[samp]
+plot(jitter(x),jitter(y),xlab="MAP (Spring, Math)",ylab="",las=1,cex=.01)
+lines(smap1,MSpred,col="black",lwd=2)
+lines(smap1,MSpred,col="white",lwd=1)
+box()
+@
+
+
+
+<<echo=FALSE,eval=FALSE>>=
+summary(RF1)
+summary(RW1)
+summary(RS1)
+summary(MF1)
+summary(MW1)
+summary(MS1)
+@
+
+%The following was part of the original submission and was removed during the review process.
+%The equi-percentile method is used by NWEA and others to map different assessment scores onto the common metric of percentiles. This popular procedure is worth discussion. While the regression approach, in its standard form (approaches like total least squares [\citeauthor{Fuller1987}, 1987] do treat the variables the same), the analyst must denote one variable as a response variable and the remaining as predictor variables, the equi-percentile method does not differentiate between the two variables. The percentiles can be estimated in different ways \citep[see papers in][]{vonDavier2011}. Figure~\ref{fig:equiplot2} shows a similar form to the quadratic curves in Figure~\ref{fig:tobits6}, except that at the ends of the scales, where there are fewer student scores. Only plots for the Spring MAP administrations are shown so that the plots can be made larger to allow closer examination to reveal the step patterns of the equi-percentile procedure. More or less fine grained matching can be done to make the step pattern less or more obvious (e.g., using equi-decile matching will produce more noticeable steps). 
+
+
+<<equiplot2,fig.cap="Scatter plots for SBA and Spring MAP values (jittered) showing the equi-percentile curve through these.",fig.width=6.5*1.3,fig.height=3.5*1.3,out.height="3.5in",out.width="6.5in",fig.align="center",fig.lab="fig:equi2",echo=FALSE,eval=FALSE>>=
+par(mfrow=c(1,2))
+
+RSx <- sMAP.Spring.Read[RSccases]
+RSy <- sSBAC.ELA[RSccases]
+plot(jitter(RSx),jitter(RSy),cex=.1,xlab="Map, Spring, Reading",ylab="SBA ELA",
+     las=1)
+rsxperc <- quantile(RSx,probs=seq(0,1,.01))
+rsyperc <- quantile(RSy,probs=seq(0,1,.01))
+lines(rsxperc,rsyperc,col="black",lwd=2)
+lines(rsxperc,rsyperc,col="white",lwd=1)
+
+MSx <- sMAP.Spring.Math[MSccases]
+MSy <- sSBAC.Math[MSccases]
+plot(jitter(MSx),jitter(MSy),cex=.1,xlab="Map, Spring, Math",ylab="SBA Math",
+     las=1)
+msxperc <- quantile(MSx,probs=seq(0,1,.01))
+msyperc <- quantile(MSy,probs=seq(0,1,.01))
+lines(msxperc,msyperc,col="black",lwd=2)
+lines(msxperc,msyperc,col="white",lwd=1)
+
+@
+
+\subsection{Tobit Regressions}
+Tobit regressions were conducted to predict the SBA scores from the associated MAP scores. This was done for four separate models: linear, quadratic, a broken stick model (two linear components joined at the median), and a cubic polynomial (higher order spline models were considered but they did not improve the fit substantively). Table~\ref{tab:cortobits} shows the Pearson correlations between the predicted values and the observed values for each pair of variables in Figure~\ref{fig:tobits6}. The highest values are for the relationships between SBA and the Spring MAP administrations. This is expected as these were administered closer in time to the SBA than the other MAP administrations. These will be the focus when exploring group differences. The linear model uses two degrees of freedom (intercept and slope). The quadratic and broken stick models use one additional degree of freedom. Of the these, the quadratic has the higher $R^2$ values (see Table~3). The cubic regression uses an additional degree of freedom and the improvement is only slight compared with the quadratic model. Higher degree spline models were examined, but did not improve the fit substantially.
+
+
+<<corcalcs,echo=FALSE,cache=FALSE>>=
+cors <- matrix(nrow=6,ncol=4)
+
+cors[1,1] <- cor(RFy,predict(AER::tobit(RFy ~ RFx,left=min(RFy),right=max(RFy))))
+cors[1,2] <- cor(RFy,predict(AER::tobit(RFy ~ poly(RFx,2),left=min(RFy),right=max(RFy))))
+cors[1,3] <- cor(RFy,predict(AER::tobit(RFy ~ bs(RFx,degree=1,df=2),left=min(RFy),right=max(RFy))))
+cors[1,4] <- cor(RFy,predict(AER::tobit(RFy ~ poly(RFx,3),left=min(RFy),right=max(RFy))))
+
+
+cors[2,1] <- cor(RWy,predict(AER::tobit(RWy ~ RWx,left=min(RWy),right=max(RWy))))
+cors[2,2] <- cor(RWy,predict(AER::tobit(RWy ~ poly(RWx,2),left=min(RWy),right=max(RWy))))
+cors[2,3] <- cor(RWy,predict(AER::tobit(RWy ~ bs(RWx,degree=1,df=2),left=min(RWy),right=max(RWy))))
+cors[2,4] <- cor(RWy,predict(AER::tobit(RWy ~ poly(RWx,3),left=min(RWy),right=max(RWy))))
+
+
+cors[3,1] <- cor(RSy,predict(AER::tobit(RSy ~ RSx,left=min(RSy),right=max(RSy))))
+cors[3,2] <- cor(RSy,predict(AER::tobit(RSy ~ poly(RSx,2),left=min(RSy),right=max(RSy))))
+cors[3,3] <- cor(RSy,predict(AER::tobit(RSy ~ bs(RSx,degree=1,df=2),left=min(RSy),right=max(RSy))))
+cors[3,4] <- cor(RSy,predict(AER::tobit(RSy ~ poly(RSx,3),left=min(RSy),right=max(RSy))))
+
+
+cors[4,1] <- cor(MFy,predict(AER::tobit(MFy ~ MFx,left=min(MFy),right=max(MFy))))
+cors[4,2] <- cor(MFy,predict(AER::tobit(MFy ~ poly(MFx,2),left=min(MFy),right=max(MFy))))
+cors[4,3] <- cor(MFy,predict(AER::tobit(MFy ~ bs(MFx,degree=1,df=2),left=min(MFy),right=max(MFy))))
+cors[4,4] <- cor(MFy,predict(AER::tobit(MFy ~ poly(MFx,3),left=min(MFy),right=max(MFy))))
+
+
+cors[5,1] <- cor(MWy,predict(AER::tobit(MWy ~ MWx,left=min(MWy),right=max(MWy))))
+cors[5,2] <- cor(MWy,predict(AER::tobit(MWy ~ poly(MWx,2),left=min(MWy),right=max(MWy))))
+cors[5,3] <- cor(MWy,predict(AER::tobit(MWy ~ bs(MWx,degree=1,df=2),left=min(MWy),right=max(MWy))))
+cors[5,4] <- cor(MWy,predict(AER::tobit(MWy ~ poly(MWx,3),left=min(MWy),right=max(MWy))))
+
+
+cors[6,1] <- cor(MSy,predict(AER::tobit(MSy ~ MSx,left=min(MSy),right=max(MSy))))
+cors[6,2] <- cor(MSy,predict(AER::tobit(MSy ~ poly(MSx,2),left=min(MSy),right=max(MSy))))
+cors[6,3] <- cor(MSy,predict(AER::tobit(MSy ~ bs(MSx,degree=1,df=2),left=min(MSy),right=max(MSy))))
+cors[6,4] <- cor(MSy,predict(AER::tobit(MSy ~ poly(MSx,3),left=min(MSy),right=max(MSy))))
+
+@
+
+<<tab:corstobits,results='asis',echo=FALSE>>=
+ps3 <- function(x) sub("0.",".",sprintf("%0.3f",x))
+corsx <- matrix(ps3(cors),nrow=nrow(cors))
+corsx[c(3,6),2] <- paste0("\\cellcolor{yellow}",corsx[c(3,6),2]) 
+rownames(corsx) <- c("Reading - Fall","Reading - Winter","Reading - Spring",
+                     "Math - Fall","Math - Winter","Math - Spring")
+colnames(corsx) <- c("Linear","Quadratic","Broken Stick","Cubic")
+print(xtable(corsx,
+      caption="Correlations between predicted values and SBA for each of the MAPs and for both Reading and Mathematics. The predicted values are from a linear Tobit model, a quadratic one, the broken stick model, and a cubic model.",label="tab:cortobits",
+      align=c("l","c","c","c","c")),
+      sanitize.text.function=identity,hline.after=c(0,3,6),caption.placement="top")
+@
+
+
+<<tobitsLEP2,cache=FALSE,fig.cap="LEP  Values are jittered.",out.height="4in",out.width="6.5in",fig.align="center",fig.lab="fig:tobitslep2",fig.height=2*2,fig.width=6.5,echo=FALSE,eval=FALSE>>=
+#%<<tobitsLEP2,cache=FALSE,fig.cap="LEP  Values are jittered.",eval=FALSE>>=
+k <- 5000  # 
+par(mfrow=c(1,2))
+#Reading Spring
+RSccases <- complete.cases(cbind(sMAP.Spring.Read,sSBAC.ELA))
+RSx <- sMAP.Spring.Read[RSccases]
+RSx2 <- sMAP.Spring.Read[RSccases]^2
+RSy <- sSBAC.ELA[RSccases]
+x1 <- RSx[LEP==TRUE]; x2 <- RSx2[LEP==TRUE]
+RS1lep1 <- AER::tobit(RSy[LEP==TRUE] ~ x1 + x2,left=min(RSy),right=max(RSy))
+x1b <- RSx[LEP==FALSE]; x2b <- RSx2[LEP==FALSE]
+RS1lep0 <- AER::tobit(RSy[LEP==FALSE] ~ x1b + x2b,
+                      left=min(RSy),right=max(RSy))
+smap1 <- seq(min(RSx),max(RSx),length.out=200)
+smap2 <- smap1^2
+newd <- list(x1 = smap1, x2 = smap2)
+RSpred1 <- predict(RS1lep1,newdata=newd)
+newdb <- data.frame(x1b = smap1, x2b = smap2)
+RSpred0 <- predict(RS1lep0,newdata=newdb)
+
+samp <- sample(1:length(RSx),k)
+x <- RSx[samp]
+y <- RSy[samp]
+plot(jitter(x),jitter(y),xlab="MAP (Spring, Reading)",ylab="SBA ELA",las=1,cex=.01)
+lines(newd$x1,RSpred1,col="green",lwd=1)
+#lines(newd$x1,RSpred1,col="white",lwd=1)
+lines(newdb$x1b,RSpred0,col="orange",lwd=1)
+#lines(newdb$x1b,RSpred0,col="white",lwd=1)
+box()
+
+#@
+#<<eval=FALSE>>=
+
+#Math Spring
+MSccases <- complete.cases(cbind(sMAP.Spring.Math,sSBAC.Math))
+MSx <- sMAP.Spring.Math[MSccases]
+MSx2 <- sMAP.Spring.Math[MSccases]^2
+MSy <- sSBAC.Math[MSccases]
+xF1 <- MSx[LEP==FALSE]; xF2 <- MSx2[LEP==FALSE]
+MS1F <- AER::tobit(MSy[LEP==FALSE] ~ xF1 + xF2,left=min(MSy),right=max(MSy))
+xT1 <- MSx[LEP==TRUE]; xT2 <- MSx2[LEP==TRUE]
+MS1T <- AER::tobit(MSy[LEP==TRUE] ~ xT1 + xT2,left=min(MSy),right=max(MSy))
+smap1 <- seq(min(MSx),max(MSx),length.out=200)
+smap2 <- smap1^2
+newd0F <- data.frame(xF1 = smap1, xF2 = smap2)
+MSpredF <- predict(MS1F,newdata=newd0F)
+newd0T <- data.frame(xT1 = smap1, xT2 = smap2)
+MSpredT <- predict(MS1T,newdata=newd0T)
+samp <- sample(1:length(MSx),k)
+x <- MSx[samp]
+y <- MSy[samp]
+plot(jitter(x),jitter(y),xlab="MAP (Spring, Math)",ylab="SBA Math",las=1,cex=.01)
+lines(smap1,MSpredF,col="orange",lwd=.5)
+lines(smap1,MSpredT,col="green",lwd=.5)
+box()
+@
+
+<<size="small",echo=FALSE>>=
+lxm <- LEP[RSccases]
+RSccases <- complete.cases(cbind(sMAP.Spring.Read,sSBAC.ELA))
+RSx <- sMAP.Spring.Read[RSccases]
+RSx2 <- sMAP.Spring.Read[RSccases]^2
+RSy <- sSBAC.ELA[RSccases]
+null1 <- AER::tobit(RSy ~ 1,left=min(RSy),right=max(RSy))
+linear1 <- update(null1, .~. + RSx) 
+quad1 <- update(linear1, .~. + RSx2)
+null <- AER::tobit(RSy ~ 1,left=min(RSy),right=max(RSy))
+byLEP1 <- AER::tobit(RSy ~ RSx + RSx2 + lxm,left=min(RSy),right=max(RSy))
+byLEP0 <- update(byLEP1, .~. - lxm)
+byLEP2 <- update(byLEP1, .~. + lxm:RSx)
+byLEP3 <- update(byLEP2, .~. + lxm:RSx2)
+justLEP <- AER::tobit(RSy ~ lxm,left=min(RSy),right=max(RSy))
+#anova(null1,linear1,quad1,byLEP0,byLEP1,byLEP2,byLEP3)
+corReadLEP <- cor(RSy,cbind(predict(linear1),predict(quad1),
+              predict(byLEP1),predict(byLEP2),predict(byLEP3),
+              predict(justLEP)))
+#t.test(RSy~lxm)
+#t.test(RSx~lxm)
+#summary(byLEP1)
+#summary(quad1)
+#summary(update(null,.~. +lxm))
+
+lxm <- LEP[MSccases]
+null1 <- AER::tobit(MSy ~ 1,left=min(MSy),right=max(MSy))
+linear1 <- update(null1, .~. + MSx) 
+quad1 <- update(linear1, .~. + MSx2)
+null <- AER::tobit(MSy ~ 1,left=min(MSy),right=max(MSy))
+byLEP1 <- AER::tobit(MSy ~ MSx + MSx2 + lxm,left=min(MSy),right=max(MSy))
+justLEP1 <- AER::tobit(MSy ~ lxm,left=min(MSy),right=max(MSy))
+byLEP0 <- update(byLEP1, .~. - lxm)
+byLEP2 <- update(byLEP1, .~. + lxm:MSx)
+byLEP3 <- update(byLEP2, .~. + lxm:MSx2)
+#anova(null1,linear1,quad1,byLEP0,byLEP1,byLEP2,byLEP3)
+corMathLEP <- cor(MSy,cbind(predict(linear1),predict(quad1),
+              predict(byLEP1),predict(byLEP2),predict(byLEP3),
+              predict(justLEP1)))
+@
+
+<<tobitsGender2,cache=FALSE,fig.cap="GENDER  Values are jittered.",out.height="4in",out.width="6.5in",fig.align="center",fig.lab="fig:tobitsgender2",fig.height=2*2,fig.width=6.5,echo=FALSE,eval=FALSE>>=
+k <- 5000  # 
+par(mfrow=c(1,2))
+#Reading Spring
+RSccases <- complete.cases(cbind(sMAP.Spring.Read,sSBAC.ELA))
+RSx <- sMAP.Spring.Read[RSccases]
+RSx2 <- sMAP.Spring.Read[RSccases]^2
+RSy <- sSBAC.ELA[RSccases]
+x1 <- RSx[Gender=="Male"]; x2 <- RSx2[Gender=="Male"]
+RS1gen1 <- AER::tobit(RSy[Gender=="Male"] ~ x1 + x2,left=min(RSy),right=max(RSy))
+x1b <- RSx[Gender=="Female"]; x2b <- RSx2[Gender=="Female"]
+RS1gen0 <- AER::tobit(RSy[Gender=="Female"] ~ x1b + x2b,
+                      left=min(RSy),right=max(RSy))
+smap1 <- seq(min(RSx),max(RSx),length.out=200)
+smap2 <- smap1^2
+newd <- list(x1 = smap1, x2 = smap2)
+RSpred1 <- predict(RS1gen1,newdata=newd)
+newdb <- data.frame(x1b = smap1, x2b = smap2)
+RSpred0 <- predict(RS1gen0,newdata=newdb)
+
+samp <- sample(1:length(RSx),k)
+x <- RSx[samp]
+y <- RSy[samp]
+plot(jitter(x),jitter(y),xlab="MAP (Spring, Reading)",ylab="SBA ELA",las=1,cex=.01)
+lines(newd$x1,RSpred1,col="green",lwd=1)
+#lines(newd$x1,RSpred1,col="white",lwd=1)
+lines(newdb$x1b,RSpred0,col="orange",lwd=1)
+#lines(newdb$x1b,RSpred0,col="white",lwd=1)
+box()
+
+
+#Math Spring
+MSccases <- complete.cases(cbind(sMAP.Spring.Math,sSBAC.Math))
+MSx <- sMAP.Spring.Math[MSccases]
+MSx2 <- sMAP.Spring.Math[MSccases]^2
+MSy <- sSBAC.Math[MSccases]
+xM1 <- MSx[Gender=="Male"]; xM2 <- MSx2[Gender=="Male"]
+MS1Male <- AER::tobit(MSy[Gender=="Male"] ~ xM1 + xM2,left=min(MSy),right=max(MSy))
+xF1 <- MSx[Gender=="Female"]; xF2 <- MSx2[Gender=="Female"]
+MS1Female <- AER::tobit(MSy[Gender=="Female"] ~ xF1 + xF2,left=min(MSy),right=max(MSy))
+smap1 <- seq(min(MSx),max(MSx),length.out=200)
+smap2 <- smap1^2
+newd0Female <- data.frame(xF1 = smap1, xF2 = smap2)
+MSpredFemale <- predict(MS1Female,newdata=newd0Female)
+newd0Male <- data.frame(xM1 = smap1, xM2 = smap2)
+MSpredMale <- predict(MS1Male,newdata=newd0Male)
+samp <- sample(1:length(MSx),k)
+x <- MSx[samp]
+y <- MSy[samp]
+plot(jitter(x),jitter(y),xlab="MAP (Spring, Math)",ylab="SBA Math",las=1,cex=.01)
+lines(smap1,MSpredFemale,col="orange",lwd=.5)
+lines(smap1,MSpredMale,col="green",lwd=.5)
+box()
+@
+
+<<size="small",echo=FALSE>>=
+gxm <- Gender[RSccases]
+RSccases <- complete.cases(cbind(sMAP.Spring.Read,sSBAC.ELA))
+RSx <- sMAP.Spring.Read[RSccases]
+RSx2 <- sMAP.Spring.Read[RSccases]^2
+RSy <- sSBAC.ELA[RSccases]
+null1 <- AER::tobit(RSy ~ 1,left=min(RSy),right=max(RSy))
+justReadGen <- AER::tobit(RSy ~ gxm,left=min(RSy),right=max(RSy))
+linear1 <- update(null1, .~. + RSx) 
+quad1 <- update(linear1, .~. + RSx2)
+null <- AER::tobit(RSy ~ 1,left=min(RSy),right=max(RSy))
+byGen1 <- AER::tobit(RSy ~ RSx + RSx2 + gxm,left=min(RSy),right=max(RSy))
+byGen0 <- update(byGen1, .~. - gxm)
+byGen2 <- update(byGen1, .~. + gxm:RSx)
+byGen3 <- update(byGen2, .~. + gxm:RSx2)
+#anova(null1,linear1,quad1,byGen0,byGen1,byGen2,byGen3)
+corReadGen <- cor(RSy,cbind(predict(linear1),predict(quad1),
+              predict(byGen1),predict(byGen2),predict(byGen3),
+              predict(justReadGen)))
+#t.test(RSy~gxm)
+#t.test(RSx~gxm)
+#summary(byGen1)
+#summary(quad1)
+#summary(update(null,.~. +gxm))
+
+gxm <- Gender[MSccases]
+null1 <- AER::tobit(MSy ~ 1,left=min(MSy),right=max(MSy))
+justMathGen <- AER::tobit(MSy ~ gxm,left=min(MSy),right=max(MSy))
+linear1 <- update(null1, .~. + MSx) 
+quad1 <- update(linear1, .~. + MSx2)
+null <- AER::tobit(MSy ~ 1,left=min(MSy),right=max(MSy))
+byGen1 <- AER::tobit(MSy ~ MSx + MSx2 + gxm,left=min(MSy),right=max(MSy))
+byGen0 <- update(byGen1, .~. - gxm)
+byGen2 <- update(byGen1, .~. + gxm:MSx)
+byGen3 <- update(byGen2, .~. + gxm:MSx2)
+#anova(null1,linear1,quad1,byGen0,byGen1,byGen2,byGen3)
+corMathGen <- cor(MSy,cbind(predict(linear1),predict(quad1),
+              predict(byGen1),predict(byGen2),predict(byGen3),
+              predict(justMathGen)))
+#t.test(MSy~gxm)
+#t.test(MSx~gxm)
+#summary(byGen1)
+#summary(quad1)
+#summary(update(null,.~. +gxm))
+@
+
+
+<<size="small",echo=FALSE>>=
+exm <- Eth2[RSccases]
+RSccases <- complete.cases(cbind(sMAP.Spring.Read,sSBAC.ELA))
+RSx <- sMAP.Spring.Read[RSccases]
+RSx2 <- sMAP.Spring.Read[RSccases]^2
+RSy <- sSBAC.ELA[RSccases]
+null1 <- AER::tobit(RSy ~ 1,left=min(RSy),right=max(RSy))
+justReadEth <- AER::tobit(RSy ~ exm,left=min(RSy),right=max(RSy))
+linear1 <- update(null1, .~. + RSx) 
+quad1 <- update(linear1, .~. + RSx2)
+null <- AER::tobit(RSy ~ 1,left=min(RSy),right=max(RSy))
+byEth1 <- AER::tobit(RSy ~ RSx + RSx2 + exm,left=min(RSy),right=max(RSy))
+byEth0 <- update(byEth1, .~. - exm)
+byEth2 <- update(byEth1, .~. + exm:RSx)
+byEth3 <- update(byEth2, .~. + exm:RSx2)
+#anova(null1,linear1,quad1,byEth0,byEth1,byEth2,byEth3)
+corReadEth <- cor(RSy,cbind(predict(linear1),predict(quad1),
+              predict(byEth1),predict(byEth2),predict(byEth3),
+              predict(justReadEth)))
+#oneway.test(RSy~exm)
+#summary(lm(RSy~exm))
+#oneway.test(RSx~exm)
+#summary(lm(RSx~exm))
+#summary(byEth1)
+#summary(quad1)
+#summary(update(null,.~. +exm))
+
+exm <- Eth2[MSccases]
+null1 <- AER::tobit(MSy ~ 1,left=min(MSy),right=max(MSy))
+justMathEth <- AER::tobit(MSy ~ exm,left=min(MSy),right=max(MSy))
+linear1 <- update(null1, .~. + MSx) 
+quad1 <- update(linear1, .~. + MSx2)
+null <- AER::tobit(MSy ~ 1,left=min(MSy),right=max(MSy))
+byEth1 <- AER::tobit(MSy ~ MSx + MSx2 + exm,left=min(MSy),right=max(MSy))
+byEth0 <- update(byEth1, .~. - exm)
+byEth2 <- update(byEth1, .~. + exm:MSx)
+byEth3 <- update(byEth2, .~. + exm:MSx2)
+#anova(null1,linear1,quad1,byEth0,byEth1,byEth2,byEth3)
+corMathEth <- cor(MSy,cbind(predict(linear1),predict(quad1),
+              predict(byEth1),predict(byEth2),predict(byEth3),
+              predict(justMathEth)))
+@
+
+<<makecorsdemo,echo=FALSE>>=
+corsdemo <- matrix(sub("0.",".",sprintf("%0.4f",
+    c(corReadLEP,corMathLEP,corReadGen,
+                  corMathGen,corReadEth,corMathEth))),ncol=6)
+rownames(corsdemo) <- c("Linear","Quad","+demo","+demolinear","+demoquad","justdemo")
+colnames(corsdemo) <- c("ReadLep","MathLep","ReadGen","MathGen",
+                        "ReadEth","MathEth")
+corsdemo <- corsdemo[,c(1,3,5,2,4,6)]
+@
+
+\begin{table} \caption{$R^2$ values from regressions between spring MAPs and SBAs when including LEP, gender, and ethnicity. The final line shows the relationship (main effect, without conditioning on MAPs) between LEP, gender, and ethnicity with SBAs (achievement gaps). See Appendix for more information on achievement gap data.} \label{tab:cordemo}
+\centering
+\begin{tabular}{lcccccc}
+& \multicolumn{3}{c}{Reading} & \multicolumn{3}{c}{Mathematics} \\ \cline{2-7}
+Linear & \multicolumn{3}{c}{\Sexpr{corsdemo[1,1]}} &
+\multicolumn{3}{c}{\Sexpr{corsdemo[1,4]}} \\
+Quadratic & \multicolumn{3}{c}{\Sexpr{corsdemo[2,1]}} &
+ \multicolumn{3}{c}{\Sexpr{corsdemo[2,4]}} \\
+\multicolumn{1}{r}{adding $\rightarrow$} & LEP & Gender & Ethnic. & LEP & Gender & Ethnic. \\ \cline{2-7}
++ demographic & \Sexpr{corsdemo[3,1]} & \Sexpr{corsdemo[3,2]} & \Sexpr{corsdemo[3,3]} &
+\Sexpr{corsdemo[3,4]} & \Sexpr{corsdemo[3,5]} & \Sexpr{corsdemo[3,6]} \\
++ demographic by linear & \Sexpr{corsdemo[4,1]} & \Sexpr{corsdemo[4,2]} & \Sexpr{corsdemo[4,3]} &
+\Sexpr{corsdemo[4,4]} & \Sexpr{corsdemo[4,5]} & \Sexpr{corsdemo[4,6]} \\
++ demographic by quadratic & \Sexpr{corsdemo[5,1]} & \Sexpr{corsdemo[5,2]} & \Sexpr{corsdemo[5,3]} &
+\Sexpr{corsdemo[5,4]} & \Sexpr{corsdemo[5,5]} & \Sexpr{corsdemo[5,6]} \\ \hline
+Demographic alone & \Sexpr{corsdemo[6,1]} & \Sexpr{corsdemo[6,2]} & \Sexpr{corsdemo[6,3]} &
+\Sexpr{corsdemo[6,4]} & \Sexpr{corsdemo[6,5]} & \Sexpr{corsdemo[6,6]} \\ \hline
+
+\end{tabular}
+\end{table}
+
+
+How much do these relationships vary by demographics? The answer is ``not by much.'' Table~\ref{tab:cordemo} shows the fit of the quadratic model and then the additional impact of LEP, gender, and ethnicity, as main effects (after conditioning on the linear and quadratic effects for MAPs), with their interactions with the linear effect, and their interactions with quadratic effect. Even including the main effect and both interactions, the increase in the correlations between the residuals and SBA increased only by about .001. 
+
+\subsection{MAP Growth Scores}
+
+
+<<mapsmissing,results='asis',echo=FALSE,eval=TRUE>>=
+MapsM <- data.frame(1:length(sMAP.Fall.Math),sMAP.Fall.Math,sMAP.Winter.Math,sMAP.Spring.Math,LEP,Gender,Eth2)
+MapsR <- data.frame(1:length(sMAP.Fall.Read),sMAP.Fall.Read,sMAP.Winter.Read,sMAP.Spring.Read,LEP,Gender,Eth2)
+names(MapsM) <- c("id",paste0("Math.",c("F","W","S")),"LEP","Gender","Eth2")
+names(MapsR) <- c("id",paste0("Read.",c("F","W","S")),"LEP","Gender","Eth2")
+sumisnalt2 <- function(x) sum(is.na(x)) < 2
+sumisna <- function(x) sum(is.na(x)) 
+MapsM <- MapsM[apply(MapsM,1,sumisnalt2),]
+MapsR <- MapsR[apply(MapsR,1,sumisnalt2),]
+@
+
+
+<<multiconvars,echo=FALSE,warning=FALSE>>=
+mlvm1 <- 'i =~ 1*Math.F + 1*Math.W + 1*Math.S
+          s =~ -2*Math.F + -1*Math.W'
+mlv1 <- growth(mlvm1,data=MapsM,missing="fiml")
+rlvm1 <- 'i =~ 1*Read.F + 1*Read.W + 1*Read.S
+          s =~ -2*Read.F + -1*Read.W'
+rlv1 <- growth(rlvm1,data=MapsR,missing="fiml")
+MapsM$MathLatentVars <- lavPredict(mlv1)[,2]
+MapsR$ReadLatentVars <- lavPredict(rlv1)[,2]
+@
+
+<<makelong,echo=FALSE,eval=TRUE>>=
+longMath <- reshape(MapsM,varying=c("Math.F","Math.W","Math.S"),direction="long")
+longRead <- reshape(MapsR,varying=c("Read.F","Read.W","Read.S"),direction="long")
+#Making time the scale that we want
+longMath$time2 <- rep(NA,length(longMath$time))
+longMath$time2[longMath$time == "S"] <- 2
+longMath$time2[longMath$time == "W"] <- 1
+longMath$time2[longMath$time == "F"] <- 0
+longRead$time2 <- rep(NA,length(longRead$time))
+longRead$time2[longRead$time == "S"] <- 2
+longRead$time2[longRead$time == "W"] <- 1
+longRead$time2[longRead$time == "F"] <- 0
+@
+
+<<multilevelcondmodes,cache=FALSE,echo=FALSE>>=
+mml <- lmer(Math ~ time2 + (time2|id),data=longMath)
+rml <- lmer(Read ~ time2 + (time2|id),data=longRead)
+
+#Conditional modes
+MathCondModes <- ranef(mml)$id$time2
+ReadCondModes <- ranef(rml)$id$time2
+@
+
+<<echo=FALSE>>=
+MapsM$MathCondModes <- MathCondModes
+MapsR$ReadCondModes <- ReadCondModes
+@
+
+<<echo=FALSE>>=
+slope <- function(x) {
+  slope <- (x[3] - x[1])/2
+  if (is.na(x[3])) slope <- x[2] - x[1]
+  if (is.na(x[1])) slope <- x[3] - x[2] 
+  return(slope)}
+finsc <- function(x) {
+  ifelse(any(!is.na(x))==FALSE,int <- NA,
+  int <- tail(x[!is.na(x)],1))
+  return(int)}
+MapsM$slsM <- apply(MapsM[,2:4],1,slope)
+interM <- apply(MapsM[,2:4],1,finsc)
+MapsR$slsR <- apply(MapsR[,2:4],1,slope)
+interR <- apply(MapsR[,2:4],1,finsc)
+@
+
+<<eval=TRUE,echo=FALSE,results='asis'>>=
+mcor <- cor(MapsM[,8:10])
+rcor <- cor(MapsR[,8:10])
+mcor <- matrix(sub("0.",".",sprintf("%0.3f",mcor)),nrow=nrow(mcor))
+rcor <- matrix(sub("0.",".",sprintf("%0.3f",rcor)),nrow=nrow(rcor))
+mcor[upper.tri(mcor,diag=TRUE)] <- NA
+rcor[upper.tri(rcor,diag=TRUE)] <- NA
+xtab <- cbind(mcor,rcor)
+colnames(xtab) <- rep(c("CMs","Sls","LVs"),2)
+rownames(xtab) <- c("CMs","Sls","LVs")
+xx <- xtab[-1,c(-3,-6)]
+@
+
+\begin{table} \caption{The different approaches to growth modeling for estimating the slope estimates for Math Maps and Reading Maps for fall, winter, and spring.} \label{tab:corrsofslopes}
+\centering
+\begin{tabular}{l cccc}
+& \multicolumn{2}{c}{Reading} & \multicolumn{2}{c}{Math} \\ \cline{2-5}
+& Cond. Modes & Obs. Slopes & Cond. Modes & Obs. Slopes \\ \cline{2-5}
+Observed Slopes & \Sexpr{xx[1,3]} &  & \Sexpr{xx[1,1]} &   \\
+Latent Var Est & \Sexpr{xx[2,3]} & \Sexpr{xx[2,4]} & \Sexpr{xx[2,1]} & \Sexpr{xx[2,2]}  \\ \hline
+\multicolumn{5}{l}{Cond.~Modes = Conditional modes for slopes (multilevel)} \\
+\multicolumn{5}{l}{Obs.~Slopes = Observed slopes} \\
+\multicolumn{5}{l}{Latent Var Est = Latent variable estimates for slopes} \\ \hline
+\end{tabular}
+\end{table}
+
+As discussed above, we use three ways to estimate growth to examine the reliability of the estimates \citep{GrimmEA2017}. Table~\ref{tab:corrsofslopes} shows that these estimates are very similar. The estimates of the slopes from the conditional modes of  multilevel models and the slope latent variable from structural equation models are nearly identical, so the choice between them is academic. For the following analysis those from the conditional modes approach are used.
+
+The slope estimates will be compared with the initial MAP scores. Interest is whether the slopes are positively related to the initial scores, as consistent with the \emph{rich get richer} adage, or are negatively related, as consistent with regression towards the mean artefact. The plots in the first column of Figure~\ref{fig:matthewplot} show that high scores in the Fall are associated with negative slopes. This decrease would be expected by the statistical artefact of regression towards the mean. For this to account for all of the associations, the expectation is that the high scores on the spring administration would be associated with positive slopes, and this is shown in the plots in the third column. Further, if the associations between the different administrations and the slopes is due only to this artefact the expectation is that the association between the slope and the Winter administration of MAPs should be near zero. The middle column shows the linear regression line is fairly flat; the correlations are $r = .09$ and $r = .04$ for mathematics and reading, respectively. That they are slightly positive shows that there is some evidence of the \emph{rich getting richer}, but that the more prominent characteristic of these plots is regression towards the mean.
+
+<<matthewplot,fig.cap="Plots between the slope estimates from the multilevel models with the Fall, Winter, and Spring administrations of the Reading (top line) and Math (bottom line) MAPs administrations. The downward slope on the left-side panels and the upward slopes on the right-side panels are consistent with regression to the mean. The slight positive slope for the middle column for math shows a tendency for those with high scores to improve more than those with low scores. Three thousand points (jittered) are shown in the scatter plots.",fig.width=7*.9,fig.height=4.5*.9,out.height="4.5in",out.width="7in",fig.align="center",fig.lab="fig:matthewplot",echo=FALSE>>=
+par(mfrow=c(2,4))
+par(mar=c(4,4,3,0))
+
+#plot.new()
+#text(1,.5,"Reading",pos=2,cex=1.2)
+
+k <- sample(1:nrow(MapsR),2000)
+plot(MapsR[k,2],MapsR[k,8],main="Fall MAP",xlab="",ylab="",las=1,font.main=1,cex.main=1,cex=.1,cex.axis=.9)
+abline(lm(MapsR[,8]~MapsR[,2]),lwd=2)
+abline(lm(MapsR[,8]~MapsR[,2]),col="white")
+mtext("Reading score",1,2.1,cex=.7)
+
+mtext("Slope est.",2,2.6,cex=.75)
+
+plot(MapsR[k,3],MapsR[k,8],main="Winter MAP",xlab="",font.main=1,ylab="",las=1,cex.main=1,cex=.1,cex.axis=.9)
+abline(lm(MapsR[,8]~MapsR[,3]),lwd=2)
+abline(lm(MapsR[,8]~MapsR[,3]),col="white")
+mtext("Reading score",1,2.1,cex=.7)
+plot(MapsR[k,4],MapsR[k,8],xlab="",main="Spring MAP",font.main=1,ylab="",las=1,cex=.1,cex.axis=.9,cex.main=1)
+abline(lm(MapsR[,8]~MapsR[,4]),lwd=2)
+abline(lm(MapsR[,8]~MapsR[,4]),col="white")
+mtext("Reading score",1,2.1,cex=.7)
+plot.new()
+
+
+#plot.new()
+#text(1,.5,"Math",pos=2,cex=1.2)
+set.seed(8763)
+k <- sample(1:nrow(MapsM),3000)
+plot(MapsM[k,2],MapsM[k,8],xlab="",ylab="",las=1,cex=.1,
+     font.main=1,cex.main=1,cex.axis=.9)
+abline(lm(MapsM[,8]~MapsM[,2]),lwd=2)
+abline(lm(MapsM[,8]~MapsM[,2]),col="white")
+mtext("Slope est.",2,2.6,cex=.75)
+mtext("Math score",1,2.3,cex=.7)
+
+
+plot(MapsM[k,3],MapsM[k,8],xlab="",font.main=1,cex.main=1,ylab="",
+     las=1,cex=.1,main="",cex.axis=.9)
+mtext("Math score",1,2.3,cex=.7)
+abline(lm(MapsM[,8]~MapsM[,3]),lwd=2)
+
+abline(lm(MapsM[,8]~MapsM[,3]),col="white")
+plot(MapsM[k,4],MapsM[k,8],xlab="",ylab="",
+     font.main=1,cex.main=1,las=1,cex=.1,main="",cex.axis=.9)
+mtext("Math score",1,2.3,cex=.7)
+abline(lm(MapsM[,8]~MapsM[,4]),lwd=2)
+
+abline(lm(MapsM[,8]~MapsM[,4]),col="white")
+plot.new()
+
+
+@
+
+<<eval=FALSE,echo=FALSE>>=
+cor(MapsM[,8],MapsM[,2:4],use="pairwise.complete.obs")
+cor(MapsM[,8],MapsM[,2:4],use="pairwise.complete.obs")^2
+
+cor(MapsR[,8],MapsR[,2:4],use="pairwise.complete.obs")
+cor(MapsR[,8],MapsR[,2:4],use="pairwise.complete.obs")^2
+@
+
+<<echo=FALSE>>=
+mlepr2 <- summary(lm(MapsM[,8]~MapsM$LEP))$r.squared
+#tapply(MapsM[,8],MapsM$LEP,mean)
+mgenr2 <- summary(lm(MapsM[,8]~MapsM$Gender))$r.squared
+#tapply(MapsM[,8],MapsM$Gender,mean)
+methr2 <- summary(lm(MapsM[,8]~MapsM$Eth2))$r.squared
+#tapply(MapsM[,8],MapsM$Eth2,mean)
+rlepr2 <- summary(lm(MapsR[,8]~MapsR$LEP))$r.squared
+#tapply(MapsR[,8],MapsR$LEP,mean)
+rgenr2 <- summary(lm(MapsR[,8]~MapsR$Gender))$r.squared
+#tapply(MapsR[,8],MapsR$Gender,mean)
+rethr2 <- summary(lm(MapsR[,8]~MapsR$Eth2))$r.squared
+#tapply(MapsR[,8],MapsR$Eth2,mean)
+d4 <- function(x) sub("0.",".",sprintf("%0.4f",x))
+@
+
+Table~\ref{tab:slopedemo4} shows the $R^2$ associated by using each demographic, as a categorical variable, to predict the slope estimates. The differences were all very small, the largest being $< .003$, or less than one-third of one percent. This shows that different groups are growing at similar rates according to these MAP assessments.
+
+\begin{table}  \caption{The $R^2$ associated with predicting the slope found from the conditional modes for the MAP administrations for reading and math by demographics variables, treated as categories. As these are all small it shows that the rate of change of these scores does not differ greatly across these demographics.} \label{tab:slopedemo4}
+\centering
+\begin{tabular}{lccc}
+& \multicolumn{3}{c}{Demographics} \\ \cline{2-4}
+& LEP & Gender & Ethnicity \\ \hline
+Reading & \Sexpr{d4(rlepr2)} & \Sexpr{d4(rgenr2)} & \Sexpr{d4(rethr2)} \\ 
+Math & \Sexpr{d4(mlepr2)} & \Sexpr{d4(mgenr2)} & \Sexpr{d4(methr2)} \\
+\hline
+\multicolumn{4}{l}{\footnotesize{LEP = Limited English Proficiency}}\\ \hline
+\end{tabular}
+\end{table}
+
+
+\section{Discussion}
+MAP and SBA are two of the most used standardized assessments used in the US. They are used for different, but overlapping, purposes and therefore both are useful. They are often taken by the same students so knowing how associated the scores on these assessments are is important. Further, the SBA are used for federal reporting so that data analysts in school districts may wish to predict them from MAP scores taken earlier in the year to predict how the district will perform. Further, educators may benefit by being able to predict performance to know how well individual students are likely to do. The MAP, according to NWEA
+
+\begin{quote}
+\dots{} provides teachers with accurate, and actionable evidence to help target instruction for each student or groups of students regardless of how far above or below they are from their grade level. \\ \phantom{d} \hfill \url{www.nwea.org/map-growth/} (Dec.~5, 2021) 
+\end{quote}
+
+\noindent While SBAC offers instructional support and interim assessments, this assessment is an end of year summative assessment that is often used to meet federal reporting requirements. Therefore, being able to predict SBA scores from MAP scores is valuable for schools and districts. Being able to do this for a large ethnically diverse school district, like Clark County, Nevada, is particularly noteworthy.
+
+The relationship between MAP and SBA showed two main characteristics, and these were consistent across reading and math, and across demographic groups. First, there is a ceiling for the SBA scores that affects about 1\% of the students in this sample. Traditional regression is inappropriate because of this. Tobit regressions \citep{Tobin1958} are well-suited for this situation, though other approaches could also be used. The second characteristic is that for these data, a quadratic curve fit the data well (see Table~3). It is important to note that this curve was increasing throughout the span of the data; we do not believe that if someone could receive a really low MAP score (below any of those given) that this would be associated with a high SBA score. Other functions with positive first and second derivatives throughout the span of the data could also be fit for these data.
+
+
+While there were large achievement gaps for the different assessments by the demographic variables (see Appendix), the relationships between MAP and SBA were very similar for the different groups. Similarly, the estimates for growth for the MAP administrations were similar for the groups. 
+
+Finally, the value of academic testing and accountability metrics more generally are being questioned \citep{Muller2018}. While this debate is beyond of the scope of this paper it is important to stress the appropriate use of assessments and to understand how the myriad of assessments that students take relate to each other in order to justify each and to learn as much as possible from the results of each. In this paper we explore the relationship between two of the most used assessments in the US with the hope that they enables people to use the results from these wisely.
+
+\bibliography{../AllRefs}
+\clearpage
+\section{Appendix}
+
+\subsection{MAP and SBA mean scores by demographics}
+
+
+Table~\ref{tab:scoresbyLEPgen} shows the differences by LEP and gender for the raw scores for the three MAP administrations for reading and math, and for the SBA scores for ELA and math. The LEP students score lower on all of these. Females and males score at approximately the same levels for the math assessments. Females perform better than males on the reading/ELA assessments. 
+
+<<echo=FALSE,message=FALSE,warning=FALSE>>=
+meas <- cbind(MAP.Fall.Mathematics,MAP.Winter.Mathematics,
+              MAP.Spring.Mathematics,SBAC.Math.Score,
+              MAP.Fall.Reading,MAP.Winter.Reading,
+              MAP.Spring.Reading,SBAC.ELA.Score)
+library(effsize)
+library(effectsize)
+@
+
+<<tab:scoresbyLEPgen,echo=FALSE,message=FALSE>>=
+xtab <- matrix(ncol=7,nrow=8)
+for (i in 1:8){
+  xtab[i,1:2] <- tapply(meas[,i],LEP,mean,na.rm=TRUE)
+  xtab[i,3] <- cohen.d(meas[,i]~as.factor(LEP))$estimate
+  xtab[i,4:5] <- tapply(meas[,i],Gender,mean,na.rm=TRUE)
+  xtab[i,6] <- cohen.d(meas[,i]~as.factor(Gender))$estimate
+  xtab[i,7] <- mean(meas[,i],na.rm=TRUE)
+}
+
+colnames(xtab) <- c("not LEP", "LEP", "Cohen's d","Female","Male","Cohen's d","Total")
+row.names(xtab) <- measnames <- 
+            c("MAP Fall Math","MAP Winter Math",
+              "MAP Spring Math","SBA Math","MAP Fall Reading","MAP Winter Reading",
+              "MAP Spring Reading","SBA ELA")
+
+@
+<<results='asis',echo=FALSE>>=
+print(xtable(xtab[c(5:8,1:4),],
+          caption="MAP and SBA means for the raw scores
+                  by Limited English Proficiency (LEP) and by Gender.",
+             label="tab:scoresbyLEPgen"),
+             align="lcccccc|c",digits=c(0,0,0,2,0,0,2,0),
+             hline.after=c(0,4,8),caption.placement="top",size="small")
+@
+
+
+Table~\ref{tab:scoresbyEth} shows the breakdown of assessment means by ethnicity category. The mean scores for the different categories can be ordered as:   
+\begin{center}
+Asians > Caucasians > Multiracial > NatAmer/PacIsl > Hispanic > Black
+\end{center}
+\noindent for all assessment. It should be stressed that the purpose of this paper is not to provide explanations nor much evidence with respect of achievement gaps. The State of Nevada Department of Education provides this information at: \url{http://nevadareportcard.nv.gov/di/main/assessment} for all school districts in the state.
+
+<<tab:scoresbyEth,results='asis',echo=FALSE>>=
+xtab <- matrix(ncol=8,nrow=8)
+for (i in 1:8){
+  xtab[i,1:6] <- tapply(meas[,i],Eth2,mean,na.rm=TRUE)
+  xtab[i,7] <- eta_squared(aov(meas[,i]~as.factor(Eth2)),verbose=FALSE)$Eta2
+  xtab[i,8] <- mean(meas[,i],na.rm=TRUE)
+}
+
+colnames(xtab) <- c("Asian","Black","Caucasian",
+                    "Hispanic","Multiracial","NatAmer/PacIsl","eta^2","Total")
+row.names(xtab) <- measnames <- 
+            c("MAP Fall Math","MAP Winter Math",
+              "MAP Spring Math","SBA Math","MAP Fall Reading","MAP Winter Reading",
+              "MAP Spring Reading","SBA ELA")
+print(xtable(xtab[c(5:8,1:4),],caption="MAP and SBA means for the raw scores by Ethnicity categories.",
+             label="tab:scoresbyEth",align="lccccccc|c",digits=2),hline.after=c(0,4,8),
+             caption.placement="top",floating=TRUE,floating.environment="sidewaystable",size="small")
+@
+
+%size="normal"
+
+\end{document}
+
